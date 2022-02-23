@@ -1,5 +1,7 @@
-# Posicionando elementos com Flexbox em CSS 💻
+# Landing Page de uma agência de Turismo
 
-Projeto integrador desenvolvido ao final do curso "Posicionando elementos com Flexbox em CSS" que realizei na Digital Innovation One (DIO)
+Este projeto foi desenvolvido ao final do curso "Posicionando elementos com Flexbox em CSS" que realizei na plataforma da Digital Innovation One (DIO).
 
-O projeto se trata de uma landing page para uma agência de turismos que deseja divulgar seus serviços na internet.
+<h3> Linguagens Utilizadas </h3>
+<li> HTML5 </li>
+<li> CSS3 </li>
