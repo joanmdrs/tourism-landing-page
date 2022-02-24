@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family:'Open Sans', sans-serif;
+    font-family:'Lato', sans-serif;
 }
 
 ul {
@@ -17,6 +18,10 @@ ul li a {
 div img {
     display: block;
     width: 100%;
+}
+
+h1, h2, h3{
+    font-family: 'Comfortaa', cursive;
 }
 
 .flex-container {
@@ -37,7 +42,7 @@ header {
 
 header .list-items{
     display: flex;
-    max-width: 260px;
+    max-width: 300px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -45,6 +50,16 @@ header .list-items{
 
 .list-items li a {
     color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+.list-items li a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 1s ease;
 }
 header .menu {
     justify-content: space-between;
@@ -80,10 +95,17 @@ header .menu {
     margin-bottom: 10px;
 }
 
+.btn:hover {
+    background-color: #185bd6;
+    transition: 1s;
+}
+
+
 #quem-somos {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 
@@ -92,6 +114,7 @@ header .menu {
     color: #122A57;
     display: flex;
     text-align: center;
+    line-height: 48px;
     margin-bottom: 20px;
 }
 
@@ -106,6 +129,7 @@ header .menu {
 
 #quem-somos p {
     margin-bottom: 10px;
+    text-align: justify;
     width: 90%;
 }
 
@@ -129,7 +153,7 @@ header .menu {
 #servicos h2 {
     color: #fff;
     font-size: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .list-servicos {
@@ -152,12 +176,18 @@ header .menu {
     text-align: center;
     margin-top: 20px;
     line-height: 30px;
-    padding: 5px 10px;
+    padding: 10px 20px;
     color: #122A57;
-    font-size: 12px;
+    font-size: 15px;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: medium;
+}
 
+.item-servico a:hover {
+    background-color: #122A57;
+    border: thin solid #fff;
+    color: #fff;
+    transition: 0.5s;
 }
 
 .item-servico p {
@@ -180,6 +210,7 @@ header .menu {
 
 #planos h2{
     font-size: 32px;
+    margin-bottom: 40px;
 }
 .list-planos {
     display: flex;
@@ -189,7 +220,8 @@ header .menu {
 
 .item-plano {
     flex: 1;
-    border: 2px solid #122A57;
+    border: thin solid #122A57;
+    border-radius: 12px;
     margin-right: 20px;
     padding: 10px;
     max-width: 240px;
@@ -230,13 +262,14 @@ header .menu {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    margin-bottom: 5px;
 }
 .item-plano ul li::before {
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     background-color: #122A57;
-    margin-right: 5px;
+    margin-right: 20px;
 
 }
 
@@ -257,16 +290,43 @@ footer .footer {
 
 @media(max-width: 992px){
     .flex-container{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 10px;
+        width: auto;
+        margin: 30px;
     }
 
+    .header{
+        width: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .menu div h1 {
+        padding-left: 10px;
+    }
+
+    .menu ul {
+        margin-bottom: 10px;
+    }
+
+
     .apresentacao {
-        flex-direction: column-reverse;
         height: auto;
     }
 
-    .apresentacao .texto-apresentacao{
-        width: 100%;
+    .texto-apresentacao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        gap: 5px;
+    }
+
+    .texto-apresentacao h1 {
+        text-align: center;
     }
 
     #quem-somos {
@@ -280,6 +340,7 @@ footer .footer {
 
     .list-servicos{
         flex-direction: column;
+        gap: 50px;
     }
 
     .item-servico img{
@@ -294,7 +355,7 @@ footer .footer {
     }
 
     .list-planos .item-plano{
-        max-width: 90%;
+        max-width: 70%;
         margin: auto;
         width: 100%;
         margin-bottom: 20px;
