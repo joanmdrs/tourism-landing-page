@@ -5,3 +5,7 @@ Este projeto foi desenvolvido ao final do curso "Posicionando elementos com Flex
 <h3> Linguagens Utilizadas </h3>
 <li> HTML5 </li>
 <li> CSS3 </li>
+
+<h3> Resultado </h3>
+
+<img src='./images/result-application.jpeg'  />
